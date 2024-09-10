@@ -665,6 +665,11 @@ elif [ "${shortname}" == "jk2" ]; then
 	fn_fetch_default_config
 	fn_default_config_remote
 	fn_set_config_vars
+elif [ "${shortname}" == "jk3" ]; then
+	array_configs+=( server.cfg )
+	fn_fetch_default_config
+	fn_default_config_remote
+	fn_set_config_vars
 elif [ "${shortname}" == "qw" ]; then
 	array_configs+=(server.cfg)
 	fn_fetch_default_config
